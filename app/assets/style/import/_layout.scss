@@ -1,0 +1,9 @@
+.header {
+  padding: 0 56px;
+  @include breakpoint($md) {
+    padding: 0 20px;
+  }
+  @include breakpoint($nav-col) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,55 @@
+$lg: 992px;
+$md: 768px;
+$nav-col: 630px;
+$sm: 576px;
+
+$gutters: (
+  lg: 30px,  // col 的間距（padding*2）
+  md: 30px,  
+  sm: 15px,
+);
+
+
+
+$primary: #AA0601;
+$secondary: #111619;
+$primary-light: #FBF2F2;
+$primary-dark: #650300;
+
+// $colors: (
+//   primary: #AA0601,
+//   secondary: #111619,
+//   primary-light: #FBF2F2,
+//   primary-dark: #650300,
+// );
+
+$spacer-base: 8px;
+// $spacers: (
+//   1: $spacer-base / 2,    // 4
+//   2: $spacer-base,        // 8
+//   3: $spacer-base * 1.5,  // 12
+//   4: $spacer-base * 2,    // 16
+//   5: $spacer-base * 2.5,  // 20
+//   6: $spacer-base * 3,    // 24
+//   7: $spacer-base * 3.5,  // 28
+//   8: $spacer-base * 4,    // 32
+//   9: $spacer-base * 4.5,  // 36
+//   10: $spacer-base * 5,   // 40
+//   11: $spacer-base * 5.5, // 44
+//   12: $spacer-base * 6,   // 48
+//   13: $spacer-base * 6.5, // 52
+//   14: $spacer-base * 7,   // 56
+//   15: $spacer-base * 7.5, // 60
+  
+// );
+
+
+
+// @each $key, $value in $spacers {
+//   .mb-md-#{$key} {
+//     margin-bottom: $value;
+//   }
+// }
+
+
+

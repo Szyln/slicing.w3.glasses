@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  max-width: 1110px + map-get($gutters,lg);
+  padding-left: map-get($gutters,lg)/2;
+  padding-right: map-get($gutters,lg)/2;
+  @include breakpoint($md) {
+    max-width: 690px + map-get($gutters,md);
+    padding-left: map-get($gutters,md)/2;
+    padding-right: map-get($gutters,md)/2;
+  }
+  @include breakpoint($sm) {
+    max-width: 345px + map-get($gutters,sm);
+    padding-left: map-get($gutters,sm)/2;
+    padding-right: map-get($gutters,sm)/2;
+  }
+}
+
+.bg {
+  &-primary {
+    background-color: $primary;
+    color: #fff;
+  }
+  &-primary-light {
+    background-color: $primary-light;
+  }
+}
+
