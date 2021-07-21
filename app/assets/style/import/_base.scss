@@ -13,9 +13,12 @@ a {
    text-decoration: none;
 
   &:hover {
-    color: color;
-    text-decoration: underline;
+    color: $primary-dark;
+
   }
 }
 
+hr {
+  color: inherit;
+}
 

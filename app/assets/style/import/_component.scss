@@ -1,66 +1,7 @@
-.navbar {
-  // logo and list
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @include breakpoint($nav-col) {
-    flex-direction: column;
-  }
-  &__brand-link {
-    display: block;
-    padding: 30px 32px;
-    @include breakpoint($lg) {
-      padding: 30px 20px;
-    }
-    @include breakpoint($nav-col) {
-      padding: 10px 20px;
-      @include stretchedLink;
-      
-    }
-  }
 
-}
-// 選單部分
-.nav {
-  max-width: 556px;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
 
-  @include breakpoint($lg) {
-    max-width: 460px;
-  }
-  @include breakpoint($nav-col) {
-    flex-wrap: wrap;
-    width: 100%;      // 回歸滿版
-    max-width: 100%;  // 但因為上面斷點有設定max-width，要清掉
-    border-top: 1px solid;
-    border-left: 1px solid;
-  }
-  &-item {
-    // position: relative;
-    @include breakpoint($nav-col) {
-      width: 50%;     // 滿版
-    }
-  }
-  &-link {
-    display: block;
-    padding: 32px;
-    font-size: 1.25rem;
-    @include breakpoint($lg) {
-      padding: 32px 20px;
-    }
-    @include breakpoint($nav-col) {
-      border-right: 1px solid;
-      border-bottom: 1px solid;
-      padding: 8px;
-    }
-
-  }
-}
-
-// @mixin info-icon
 
 // .link-tel {
 
 // }
+
