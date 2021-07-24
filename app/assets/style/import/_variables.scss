@@ -1,8 +1,16 @@
 $lg: 992px;
 $md: 768px;
-$footer-nav: 700px;
-$nav-col: 630px;
+$footer-nav: 720px;
+$nav-col: 640px;
 $sm: 576px;
+
+$displays: (
+  "none": none,
+  "block": block,
+  "flex": flex,
+  "inline-block": inline-block,
+  "inline": inline,
+);
 
 $gutters: (
   lg: 30px,  // col 的間距（padding*2）
@@ -16,34 +24,35 @@ $primary-light: #FBF2F2;
 $primary-dark: #650300;
 $white: #fff;
 
-// $colors: (
-//   primary: #AA0601,
-//   secondary: #111619,
-//   primary-light: #FBF2F2,
-//   primary-dark: #650300,
-// );
-
-$spacer-base: 8px;
+$colors: (
+  primary: #AA0601,
+  secondary: #111619,
+  primary-light: #FBF2F2,
+  primary-dark: #650300,
+  white: #fff,
+);
+$spacer: 4px;
 $spacers: (
   0: 0,
-  1: $spacer-base / 2,    // 4
-  2: $spacer-base,        // 8
-  3: $spacer-base * 1.5,  // 12
-  4: $spacer-base * 2,    // 16
-  5: $spacer-base * 2.5,  // 20
-  6: $spacer-base * 3,    // 24
-  7: $spacer-base * 3.5,  // 28
-  8: $spacer-base * 4,    // 32
-  9: $spacer-base * 4.5,  // 36
-  10: $spacer-base * 5,   // 40
-  11: $spacer-base * 5.5, // 44
-  12: $spacer-base * 6,   // 48
-  13: $spacer-base * 6.5, // 52
-  14: $spacer-base * 7,   // 56
-  15: $spacer-base * 7.5, // 60
-  small: $spacer-base * 0.875,
+  1: $spacer,   // 4
+  2: $spacer * 2,   // 8
+  3: $spacer * 3,   // 12
+  4: $spacer * 4,   // 16
+  5: $spacer * 5,   // 20
+  6: $spacer * 6,   // 24
+  7: $spacer * 7,   // 28
+  8: $spacer * 8,   // 32
+  9: $spacer * 9,   // 36
+  10: $spacer * 10,   // 40
+  11: $spacer * 11,   // 44
+  12: $spacer * 12,   // 48
+  13: $spacer * 13,   // 52
+  14: $spacer * 14,   // 56
+  15: $spacer * 15,   // 60
+  small: $spacer * 3.75,
 );
 
+$line-height-base: 1.5;
 $font-size-small: 14px;
 $font-size-base: 16px;
 $font-sizes: (
@@ -65,6 +74,33 @@ $font-sizes: (
 );
 
 
+$font-weights: (
+  "normal": 400,
+  "medium": 500,
+  "bold": 700,
+  "black": 900,
+);
 
+$column-amount: 12;
+$column-amount-sm: 4;
+$columns: (
+  1: 1 * 100% /$column-amount,
+  2: 2 * 100% /$column-amount,
+  3: 3 * 100% /$column-amount,
+  4: 4 * 100% /$column-amount,
+  5: 5 * 100% /$column-amount,
+  6: 6 * 100% /$column-amount,
+  7: 7 * 100% /$column-amount,
+  8: 8 * 100% /$column-amount,
+  9: 9 * 100% /$column-amount,
+  10: 10 * 100% /$column-amount,
+  11: 11 * 100% /$column-amount,
+  12: 12 * 100% /$column-amount,
+);
+$columns-sm: (
+  1: 1 * 100% /$column-amount-sm,
+  2: 2 * 100% /$column-amount-sm,
+  3: 3 * 100% /$column-amount-sm,
+  4: 4 * 100% /$column-amount-sm,
 
-
+);

@@ -1,16 +1,54 @@
-@each $key, $value in $font-sizes {
-  .fs-#{$key} {
-    font-size: $value;
-  }
-  @each $key, $value in $spacers {
-    .mb-#{$key} {
-      margin-bottom: $value;
+@each $key, $value in $columns {
+  .col-#{$key} {
+    width: $value;
+    flex: 0 0 auto;
+    padding-left: map-get($gutters,lg)/2;
+    padding-right: map-get($gutters,lg)/2;
+    @media (max-width: $md) {
+      padding-left: map-get($gutters,md)/2;
+      padding-right: map-get($gutters,md)/2;
+    }
+    @media (max-width: $sm) {
+      padding-left: map-get($gutters,sm)/2;
+      padding-right: map-get($gutters,sm)/2;
     }
   }
 }
 
 
+@each $key, $value in $font-sizes {
+  .fs-#{$key} {
+    font-size: $value;
+  }
+}
+@each $key, $value in $spacers {
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+}
+@each $key, $value in $displays {
+  .d-#{$key} {
+    display: $value;
+  }
+}
+@each $key, $value in $font-weights {
+  .weight-#{$key} {
+    font-weight: $value;
+  }
+}
+@each $key, $value in $colors {
+  .#{$key} {
+    color: $value;
+  }
+}
+@each $key, $value in $colors {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+}
 
+
+// md
 @media (max-width: $md) {
   @each $key, $value in $font-sizes {
     .fs-md-#{$key} {
@@ -22,7 +60,18 @@
       margin-bottom: $value;
     }
   }
+  @each $key, $value in $displays {
+    .d-md-#{$key} {
+      display: $value;
+    }
+  }
+  @each $key, $value in $font-weights {
+    .weight-md-#{$key} {
+      font-weight: $value;
+    }
+  }
 }
+// sm
 @media (max-width: $sm) {
   @each $key, $value in $font-sizes {
     .fs-sm-#{$key} {
@@ -32,6 +81,16 @@
   @each $key, $value in $spacers {
     .mb-sm-#{$key} {
       margin-bottom: $value;
+    }
+  }
+  @each $key, $value in $displays {
+    .d-sm-#{$key} {
+      display: $value;
+    }
+  }
+  @each $key, $value in $font-weights {
+    .weight-sm-#{$key} {
+      font-weight: $value;
     }
   }
 }

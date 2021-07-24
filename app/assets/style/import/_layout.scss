@@ -1,7 +1,7 @@
 .header {
-  padding: 0 56px;
+  padding: 0 $spacer * 14;
   @include breakpoint($md) {
-    padding: 0 20px;
+    padding: 0 $spacer * 5 ;
   }
   @include breakpoint($nav-col) {
     padding: 0;
@@ -48,15 +48,15 @@
   }
   &-link {
     display: block;
-    padding: 32px;
+    padding: $spacer * 8;
     font-size: 1.25rem;
     @include breakpoint($lg) {
-      padding: 32px 20px;
+      padding: $spacer * 8 $spacer * 5;
     }
     @include breakpoint($nav-col) {
       border-right: 1px solid;
       border-bottom: 1px solid;
-      padding: 8px;
+      padding: $spacer * 2;
     }
 
   }
@@ -64,55 +64,45 @@
 
 
 .footer {
-  padding: 40px 0;
+  padding: $spacer * 10 0;
   @include breakpoint($md) {
-    padding: 32px 0;
+    padding: $spacer * 8 0;
   }
   @include breakpoint($sm) {
-    padding: 24px 0;
+    padding: $spacer * 6 0;
   }
 }
 
 
 .footer__nav {
-  // max-width: 468px;
-
   &-item {
     
-    margin-right: 40px;
-    @include breakpoint($md) {
-      margin-right: 40px;
-    }
+    margin-right: $spacer * 10;
     @include breakpoint($footer-nav) {
-      margin-right: 20px;
+      margin-right: $spacer * 5;
     }
 
     
   }
   &-link {
     display: block;
-    padding: 4px 0;
+    padding: $spacer 0;
   }
 }
 .footer__contacts {
-  // max-width: 208px;
   &-item {
-    margin-left: 32px;
+    margin-left: $spacer * 8;
     @include breakpoint($sm) {
-      margin-left: 24px;
-      img {
-        display: block;
-        // line-height: 1.5;
-      }
+      margin-left: $spacer * 6;
     }
 
   }
 }
 .footer__policy {
   &-item {
-    margin-left: 48px;
+    margin-left: $spacer * 8;
     @include breakpoint($md) {
-      margin-left: 24px;
+      margin-left: $spacer * 6;
     }
     @include breakpoint($sm) {
       margin-left: 0;
@@ -125,24 +115,22 @@
 
 
 
-.footer__icon-tel {
-  display: flex;
+.icon-tel {
   &::before {
-    @include MaterialIconBefore("call", 16px);
+    @include MaterialIconBefore("call", $spacer * 4);
     @include breakpoint($md) {
-      padding-right: 8px;
+      padding-right: $spacer * 2;
     }
     @include breakpoint($sm) {
       padding-right: 5px;
     }
   }
 }
-.footer__icon-mail {
-  display: flex;
+.icon-mail {
   &::before {
-    @include MaterialIconBefore("email", 16px);
+    @include MaterialIconBefore("email", $spacer * 4);
     @include breakpoint($md) {
-      padding-right: 8px;
+      padding-right: $spacer * 2;
     }
     @include breakpoint($sm) {
       padding-right: 5px;

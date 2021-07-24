@@ -5,7 +5,7 @@
 body {
   font-family: Roboto, "Noto Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: $line-height-base;
 }
 
 a {
@@ -22,3 +22,15 @@ hr {
   color: inherit;
 }
 
+label {
+  display: block;
+}
+input {
+  border: 1px solid;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: $spacer * 4;
+}
+// input[type="checkbox"] {
+//   border-color: black;
+// }

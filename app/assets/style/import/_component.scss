@@ -1,4 +1,19 @@
-
+.btn {
+  border: 0;
+  padding: 16px;
+  @include breakpoint($md) {
+    padding: 10px;
+  }
+  @include breakpoint($sm) {
+    padding: 8px;
+  }
+  &:hover {
+    background: $secondary;
+  }
+  &:active {
+    background: $primary-dark;
+  }
+}
 
 
 // .link-tel {
