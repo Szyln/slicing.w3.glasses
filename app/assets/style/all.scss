@@ -1,12 +1,15 @@
-@import "import/variables";  
-@import "import/function";
+@import "import/base/variables";  
 @import "import/mixin";
 @import "import/grid";
-@import "import/flexbox";
 
-@import "import/reset";
-@import "import/base";
+@import "import/base/reset";
+@import "import/base/base";
+
+@import "import/theme";
+
 @import "import/component";
+
 @import "import/util";
-@import "import/layout";
-@import "import/index";
+
+@import "layout/layout";
+@import "pages/index";

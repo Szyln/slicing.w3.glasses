@@ -16,7 +16,7 @@
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: $spacer * 10;
-    @include breakpoint($md) {
+    @include breakpoint($md) {    
       font-style: 2rem;
       margin-bottom: $spacer * 8;
     }

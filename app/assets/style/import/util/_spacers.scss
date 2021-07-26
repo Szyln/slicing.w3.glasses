@@ -1,0 +1,37 @@
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@each $key, $value in $spacers {
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+}
+@media (max-width: $md) {
+  @each $key, $value in $spacers {
+    .mb-md-#{$key} {
+      margin-bottom: $value;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  @each $key, $value in $spacers {
+    .mb-sm-#{$key} {
+      margin-bottom: $value;
+    }
+  }
+}
+
+.radius {
+  &-round {
+    border-radius: 4px;
+  }
+  &-top {
+    border-radius: 4px 4px 0 0;
+  }
+  &-bottom {
+    border-radius: 0 0 4px 4px;
+  }
+}

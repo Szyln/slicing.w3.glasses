@@ -1,76 +1,27 @@
-.bg {
-  &-primary {
-    background-color: $primary;
-    color: #fff;
+@import "util/spacers";
+@import "util/font";
+@import "util/position";
+@import "util/display";
+@import "util/flexbox";
 
-  }
-  &-primary-light {
-    background-color: $primary-light;
-
-  }
-}
-.text {
-  &-center {
-    text-align: center;
-  }
-  &-end {
-    text-align: right;
-  }
-}
-.p {
-  &-absolute {
-    position: absolute;
-  }
-  &-relative {
-    position: relative;
-  }
-  &-sm-relative {
-    position: relative;
-  }
-  &-sm-absolute {
-    position: absolute;
-  }
-}
 .h-inherit {
   height: inherit;
 }
-.text-size-inherit {
-  font-size: inherit;
-}
+
 .stretched-link {
   @include stretchedLink;
 }
 .icon-link {
   display: flex;
 }
-.radius {
-  &-round {
-    border-radius: 4px;
-  }
-  &-top {
-    border-radius: 4px 4px 0 0;
-  }
-  &-bottom {
-    border-radius: 0 0 4px 4px;
-  }
-}
-.mx-auto {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (max-width:$nav-col) {
-  .d-nav-none {
-    display: none;
-  }
-  .d-nav-flex {
-    display: flex;
-  }
-}
 
 
-@media (max-width: $sm) {
-  .lh-sm-30 {
-    line-height: 30px;
-  }
-}
+
+
+
+
+@import "util/display";
+@import "util/flexbox";
+@import "util/font";
+@import "util/position";
+@import "util/spacers";
