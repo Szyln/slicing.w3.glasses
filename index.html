@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-  <!-- Material icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet">
-  <!-- ALL.CSS -->
-  <link rel="stylesheet" href="./assets/style/all.css">
-</head>
-
-<body>
-
-  <header class="header bg-primary">
-    <nav class="navbar d-flex justify-content-between align-items-center flex-sm-column">
-      <h1>
-        <a class="navbar__brand-link" href="index.html">
-          <img class="navbar__brand d-block" src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png"] alt="glasses' logo">
-        </a>
-      </h1>
-      <ul class="nav d-flex text-center">
-        <li class="nav-item"><a class="nav-link" href="#">系列鏡框</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">門市據點</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">部落格</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">常見問題</a></li>
-      </ul>
-    </nav>
-  </header>
-
-    <!-- https://hexschool.github.io/webLayoutTraining1st/week3/photo.png -->
-  <!-- 看得清，才能看得通 -->
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>首頁</title>
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+<!-- Material icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet">
+<!-- ALL.CSS -->
+<link rel="stylesheet" href="./assets/style/all.css">
+<!-- favicon -->
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon.png">
+  </head>
+  <body>
+    <header>
+      <nav class="bg-primary navbar d-flex justify-content-between align-items-center flex-sm-column">
+  <h1 class="navbar-title">
+    <a class="navbar__brand-link" href="index.html">
+      <img class="mx-auto navbar__brand d-block" src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png"] alt="glasses' logo">
+    </a>
+  </h1>
+  <ul class="nav d-flex text-center">
+    <li class="nav-item"><a class="nav-link" href="productOptical.html">系列鏡框</a></li>
+    <li class="nav-item"><a class="nav-link" href="shopAddress.html">門市據點</a></li>
+    <li class="nav-item"><a class="nav-link" href="blog.html">部落格</a></li>
+    <li class="nav-item"><a class="nav-link" href="qna.html">常見問題</a></li>
+  </ul>
+</nav>
+    </header>
+    <main>
+      
+<!-- https://hexschool.github.io/webLayoutTraining1st/week3/photo.png -->
+<!-- 看得清，才能看得通 -->
 <div class="banner">
   <div class="container-md h-inherit d-flex justify-content-end align-items-center">
     <div class="banner__title text-end primary-dark">
       <h2 class="fs-9 fs-md-5 fs-sm-4 lh-sm-30">Promise-Desert 2020 早春系列</h2>
-      <h3 class="fs-16 fs-md-12 fs-sm-8 weight-bold">看得清，才能看得遠</h3>   
+      <h3 class="fs-16 fs-md-12 fs-sm-8 weight-bold">看得清，才能看得遠</h3>
     </div>
   </div>
 </div>
@@ -96,13 +97,13 @@
   <h2 class="index-section__title index-section__title-sub primary-dark">經典系列鏡框</h2>
   <div class="container-md">
     <!-- optical -->
-    <div class="row classic__card mb-8 mb-md-8"> 
+    <div class="row classic__card mb-8 mb-md-8">
       <div class="col-7 col-sm-4">
         <img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png" alt="optical glasses">
       </div>
       <div class="col-5 d-flex align-items-center">
         <h3 class="classic__card-title">
-          <a class="stretched-link icon-link icon-optical" href="#">OPTICAL</a>
+          <a class="stretched-link d-flex icon-optical" href="#">OPTICAL</a>
         </h3>
       </div>
     </div>
@@ -113,7 +114,7 @@
       </div>
       <div class="col-5  d-flex align-items-center  justify-content-end justify-content-md-start">
         <h3 class="classic__card-title">
-          <a class="stretched-link icon-link icon-sunglasses" href="#">SUNGLASSES</a>
+          <a class="stretched-link d-flex icon-sunglasses" href="#">SUNGLASSES</a>
         </h3>
       </div>
     </div>
@@ -124,13 +125,13 @@
       </div>
       <div class="col-5  d-flex align-items-center  ">
         <h3 class="classic__card-title">
-          <a class="stretched-link icon-link icon-functional" href="#">FUNCTIONAL</a>
+          <a class="stretched-link d-flex icon-functional" href="#">FUNCTIONAL</a>
         </h3>
       </div>
     </div>
-   
+
   </div>
-  
+
 </section>
 <!-- 聯名系列鏡框 -->
 <section class="index-section collaboration">
@@ -158,7 +159,8 @@
     <ul class="row">
       <li class="col-3 col-md-6 col-sm-4 mb-md-8 mb-sm-2">
         <div class="feedback-card">
-          <img class="feedback-card__image" src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-1.png" alt="feedback">
+          <img class="feedback-card__image" src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-1.png"
+            alt="feedback">
           <ul class="feedback-card__info">
             <li class="feedback-card__info-name">
               Jessy
@@ -174,7 +176,8 @@
       </li>
       <li class="col-3 col-md-6 col-sm-4  mb-md-8 mb-sm-2">
         <div class="feedback-card">
-          <img class="feedback-card__image" src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-2.png" alt="feedback">
+          <img class="feedback-card__image" src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-2.png"
+            alt="feedback">
           <ul class="feedback-card__info">
             <li class="feedback-card__info-name">
               凱倫
@@ -190,7 +193,8 @@
       </li>
       <li class="col-3 col-md-6 col-sm-4 mb-sm-2">
         <div class="feedback-card">
-          <img class="feedback-card__image" src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-3.png" alt="feedback">
+          <img class="feedback-card__image" src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-3.png"
+            alt="feedback">
           <ul class="feedback-card__info">
             <li class="feedback-card__info-name">
               悠悠
@@ -205,8 +209,9 @@
         </div>
       </li>
       <li class="col-3 col-md-6 col-sm-4">
-                <div class="feedback-card">
-          <img class="feedback-card__image" src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-4.png" alt="feedback">
+        <div class="feedback-card">
+          <img class="feedback-card__image" src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-4.png"
+            alt="feedback">
           <ul class="feedback-card__info">
             <li class="feedback-card__info-name">
               Kyuan
@@ -230,7 +235,7 @@
   <div class="container-md">
     <div class="col-8 col-sm-4 mx-auto">
       <p class="fs-5 fs-md-4 mb-4 mb-md-4">
-      我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+        我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
       </p>
       <form class="contact-us" action="">
         <label class="contact-us__label" for="name">
@@ -256,82 +261,84 @@
     </div>
   </div>
 </section>
-  <!-- https://hexschool.github.io/webLayoutTraining1st/week3/photo.png -->
-
-  <footer class="footer bg-primary">
-    <div class="container">
-      <!-- 選單＋社群連結 -->
-      <div class="footer__navbar d-flex justify-content-between align-items-center mb-8 d-nav-none">
-        <!-- 選單 -->
-        <ul class="footer__nav d-flex justify-content-between">
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="/">首頁</a> 
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#">系列鏡框</a> 
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#">門市據點</a> 
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#">部落格</a> 
-          </li>
-          <li >
-            <a class="footer__nav-link" href="#">常見問題</a> 
-          </li>
-        </ul>
-        <!-- 社群連結 -->
-        <ul class="footer__contacts d-flex  justify-content-end">
-          <li class="footer__contacts-item"><a href="#">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg"] alt="logo-facebook">
+<!-- https://hexschool.github.io/webLayoutTraining1st/week3/photo.png -->
+    </main>
+    <footer class="footer bg-primary">
+  <div class="container">
+    <!-- 選單＋社群連結 -->
+    <div class="footer__navbar d-flex justify-content-between align-items-center mb-8 d-nav-none">
+      <!-- 選單 -->
+      <ul class="footer__nav d-flex justify-content-between">
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="/">首頁</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="productOptical.html">系列鏡框</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="shopAddress.html">門市據點</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="blog.html">部落格</a>
+        </li>
+        <li>
+          <a class="footer__nav-link" href="qna.html">常見問題</a>
+        </li>
+      </ul>
+      <!-- 社群連結 -->
+      <ul class="footer__contacts d-flex  justify-content-end">
+        <li class="footer__contacts-item"><a href="#">
+            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" ] alt="logo-facebook">
           </a></li>
-          <li class="footer__contacts-item"><a href="#">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg"] alt="logo-instagram"> 
+        <li class="footer__contacts-item"><a href="#">
+            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" ] alt="logo-instagram">
           </a></li>
-          <li class="footer__contacts-item"><a href="#">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg"] alt="icon-line">
+        <li class="footer__contacts-item"><a href="#">
+            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" ] alt="icon-line">
           </a></li>
-        </ul>
-      </div>
+      </ul>
+    </div>
     <div class="d-flex justify-content-between mb-6 mb-md-5 mb-sm-6">
       <!-- 電話、信箱 -->
       <ul class="lh-sm-30">
         <li class="mb-4 mb-md-3 mb-sm-2">
-          <a class="icon-tel icon-link fs-9 fs-md-5 fs-sm-4" href="tel:+0800000000">0800-000-000</a>
+          <a class="icon-tel d-flex fs-9 fs-md-5 fs-sm-4" href="tel:+0800000000">0800-000-000</a>
         </li>
         <li>
-          <a class="icon-mail  icon-link fs-9 fs-md-5 fs-sm-4" href="mailto:glasses@business.com">glasses@business.com</a>
+          <a class="icon-mail  d-flex fs-9 fs-md-5 fs-sm-4" href="mailto:glasses@business.com">glasses@business.com</a>
         </li>
       </ul>
       <!-- 社群連結 -->
       <ul class="footer__contacts  justify-content-end d-none d-nav-flex">
         <li class="footer__contacts-item"><a href="#">
-          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg"] alt="logo-facebook">
-        </a></li>
+            <img class="footer__contacts-image" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg"
+              ] alt="logo-facebook">
+          </a></li>
         <li class="footer__contacts-item"><a href="#">
-          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg"] alt="logo-instagram"> 
-        </a></li>
+            <img class="footer__contacts-image" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg"
+              ] alt="logo-instagram">
+          </a></li>
         <li class="footer__contacts-item"><a href="#">
-          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg"] alt="icon-line">
-        </a></li>
+            <img class="footer__contacts-image"
+              src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" ] alt="icon-line">
+          </a></li>
       </ul>
     </div>
-      <hr class="mb-8 mb-md-6 mb-sm-4">
-      <div class="d-flex justify-content-between fs-sm-small flex-sm-column">
-        <small class="mb-sm-2">Copyright © 2020 Glasses.All rights reserved.</small>
-        <ul class="footer__policy d-flex justify-content-end d-sm-block">
-          <li class="footer__policy-item mb-sm-2">
-            <a href="#">隱私權政策</a>
-          </li>
-          <li class="footer__policy-item">
-            <a href="#">服務條款</a>
-          </li>
-        </ul>
-      </div>
+    <hr class="mb-8 mb-md-6 mb-sm-4">
+    <div class="d-flex justify-content-between fs-sm-small flex-sm-column">
+      <small class="mb-sm-2">Copyright © 2020 Glasses.All rights reserved.</small>
+      <ul class="footer__policy d-flex justify-content-end d-sm-block">
+        <li class="footer__policy-item mb-sm-2">
+          <a href="#">隱私權政策</a>
+        </li>
+        <li class="footer__policy-item">
+          <a href="#">服務條款</a>
+        </li>
+      </ul>
     </div>
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
-</body>
-
+  </div>
+</footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
 </html>
